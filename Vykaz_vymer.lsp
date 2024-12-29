@@ -16,6 +16,10 @@
 	; --- upozornìní kontroly polohy stanièení a køivek
 	
 	(alert "Nutná kontrola polohy stanièení a køivek kubatur: NEJNIŽŠÍ BOD KØIVKY MUSÍ LEŽET POD STANIÈENÍM ØEZU, VE KTERÉM SE KØIVKA NACHÁZÍ.\nPokud jsi tuto podmínku nezkontroloval, ukonèi pøíkaz a proveï jej po kontrole.\nPokud je vše v poøádku, vyber najednou všechna stanièení i køivky pro výpoèet kubatur.")
+
+	; --- nová verze lispu 2.0 (Excel 2.1)
+	
+	(alert "Verze 2.0\nNení nutné Mtexty stanièení rozbíjet na text.\nOd verze 2.0 je možné konkrétním obsahem názvu hladin kubatur pøedem pøipravit jednotky výstupu. Není to podmínkou, pokud nìkteré (nebo všechny) hladiny koncovky +m2+/+m+ nemají, u neoznaèených hladin bude výstup stejný jako døíve plocha i objem (viz manuál). ")
 	
 	; --- vytvoøení souboru txt
 	
@@ -26,7 +30,7 @@
 	(setq pre_precision (getvar "luprec"))
 	(setvar "luprec" 6)
 	(princ "Vyber všechna stanièení a všechny køivky pro výpoèet kubatur.")
-	    (if (setq s (ssget '((0 . "Text,Lwpolyline,Line")) ))
+	    (if (setq s (ssget '((0 . "Text,Mtext,Lwpolyline,Line")) ))
 		(progn
 		    (setq i 0
 			  n (sslength s)
