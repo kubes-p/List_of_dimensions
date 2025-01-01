@@ -22,3 +22,5 @@ NEW FILES for plan drawings (using "_sit" keyword); manual updated (2022/08)
 2.3 problem when a layer's name is a part of other layer's name fixed
 
 2.4 problem with new sheets order in Excel fixed - now working with the sheet name
+
+2.5 problem with the decimal point ("." / ",") appearing on some computers in one office solved with some code ensuring the correct decimal point throughout the calculation
