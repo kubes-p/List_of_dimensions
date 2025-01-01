@@ -18,3 +18,5 @@ Detailed description and workflow is described in the attached .docx file, in Cz
 NEW FILES for plan drawings (using "_sit" keyword); manual updated (2022/08)
 
 2.2 problem with spaces in the stationing text solved
+
+2.3 problem when a layer's name is a part of other layer's name fixed
