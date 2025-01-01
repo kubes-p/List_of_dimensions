@@ -20,3 +20,5 @@ NEW FILES for plan drawings (using "_sit" keyword); manual updated (2022/08)
 2.2 problem with spaces in the stationing text solved
 
 2.3 problem when a layer's name is a part of other layer's name fixed
+
+2.4 problem with new sheets order in Excel fixed - now working with the sheet name
